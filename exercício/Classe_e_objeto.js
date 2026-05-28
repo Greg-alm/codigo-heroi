@@ -5,12 +5,10 @@ Enunciado:
 Modifique a classe Heroi para que o construtor também receba e armazene esse nível.
  No JavaScript da função, capture esse novo input e garanta que o nível seja exibido 
  no painel de resultado acessando a propriedade do objeto."
-*/
+*/ 
 
 
 
-/*O objeto é classificado com uma classe. */
-/*Criação da classe */
 class heroi{
     constructor(nome,classe, nivel){
         this.nome = nome;
@@ -29,16 +27,18 @@ function criarHeroi(){
 
 
     /*Criando o objeto dinâmicamente com os valores dos campos. */
-    const novoHeroi = new heroi(nomeDigitado, classeSelecionada);
+    const novoHeroi = new heroi(nomeDigitado, classeSelecionada,niveldigitado);
 
     //exibindo na tela atraves aspropriedades o objeto
     document.getElementById('resultado').style.display = "block";
     document.getElementById('dadosHeroi').innerHTML = `
     nome: <strong>${novoHeroi.nome}</strong><br>
-    classe: <strong>${novoHeroi.classe}</strong>`;
+    classe: <strong>${novoHeroi.classe}</strong>
+    Nivel:<strong>${novoHeroi.nivel}</strong>
+    `;
+    
 
 
 
 
 }
-
